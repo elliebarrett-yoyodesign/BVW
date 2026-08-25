@@ -1,2 +1,6 @@
+# Crawling is allowed on purpose, so the noindex meta tag on every page can be read and obeyed.
+# Blocking the crawl here would prevent noindex from working: the crawler would never fetch the
+# page, never see the instruction, and the URL could still be listed with no description.
+# This file is not access control. Anyone with the link can read everything.
 User-agent: *
-Disallow: /
+Allow: /
